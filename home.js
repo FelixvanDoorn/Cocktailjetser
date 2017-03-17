@@ -35,9 +35,16 @@ function updateList() {
     });
 }
 
+function checkHashtag() {
+    var type = window.location.hash.substr(1);
+    if (type == 'screen') {
+        $('#next').hide();
+    }
+}
+
 $(document).ready(function() {
     setBlueprints();
-    //updateList();
+    checkHashtag();
     setInterval(updateList, 1000);
 
     $('#nextNumber').click(function() {

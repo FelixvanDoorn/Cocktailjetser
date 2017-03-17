@@ -21,7 +21,7 @@ function nextNumber() {
 
 switch($_POST['type']) {
     case 'getList':
-        $query = "SELECT * FROM `tickets` WHERE called=0 ORDER BY number ASC LIMIT 8";
+        $query = "SELECT * FROM `tickets` WHERE called=0 ORDER BY number DESC LIMIT 8";
         $result = $mysqli->query($query);
         $rows = array();
         while ($row = $result->fetch_assoc()) {
