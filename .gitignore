@@ -63,4 +63,4 @@ fabric.properties
 
 # End of https://www.gitignore.io/api/phpstorm
 
-./database.php
+/database.php
